@@ -1,0 +1,13 @@
+# Published files are whitelisted via the "files" field in package.json;
+# this file is a safety net in case "files" is ever removed.
+node_modules/
+test/
+examples/
+scripts/
+src/
+tsconfig.json
+*.tsbuildinfo
+.env
+.env.*
+*.log
+coverage/

@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env
+.env.*
+*.log
+.DS_Store
+coverage/
+my-fingerprints/
+*.fingerprint.json

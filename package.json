@@ -1,0 +1,69 @@
+{
+  "name": "llm-fingerprint-detector",
+  "version": "0.1.0",
+  "description": "Fingerprint and verify LLMs behind OpenAI-compatible APIs from single-token output distributions. Independent open-source implementation of \"One Token Is Enough\" (Bruckner, arXiv:2607.10252).",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./references": {
+      "types": "./dist/reference.d.ts",
+      "import": "./dist/reference.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "llm-fingerprint": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test",
+    "prepublishOnly": "npm run build && node --test"
+  },
+  "keywords": [
+    "llm",
+    "fingerprint",
+    "fingerprinting",
+    "model-verification",
+    "openai-compatible",
+    "api-verification",
+    "jensen-shannon",
+    "behavioral-fingerprint",
+    "one-token-is-enough",
+    "llm-security",
+    "model-identity",
+    "model-substitution",
+    "api-audit",
+    "llm-verification",
+    "openrouter",
+    "gpt",
+    "claude",
+    "cli"
+  ],
+  "homepage": "https://tosea.ai/free-tools/llm-api-fingerprint-checker",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ToseaAI/llm-fingerprint-detector.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ToseaAI/llm-fingerprint-detector/issues"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
