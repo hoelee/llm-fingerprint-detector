@@ -215,6 +215,8 @@ All options (`cells`, `samplesPerCell`, `concurrency`, `timeoutMs`, `maxRetries`
 ## Development
 
 ```bash
+git clone https://github.com/ToseaAI/llm-fingerprint-detector.git
+cd llm-fingerprint-detector
 npm install
 npm run build     # tsc → dist/
 npm test          # builds, then runs node --test against the built output
